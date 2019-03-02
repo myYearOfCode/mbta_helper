@@ -1,0 +1,100 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	/* align-items: stretch;
+  height: 100vh; */
+	padding-top: 50px;
+	max-width: 40vw;
+}
+
+.inner {
+	/* max-height: 75vh; */
+	border: 2px solid black;
+	border-radius: 46px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	box-shadow: 10px 10px 15px grey;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+svg {
+	margin: auto;
+	max-width: 200px;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 10px;
+	/* flex-grow: 1;
+	align-self: center;
+	height: 30vw;
+	margin: auto; */
+}
+
+.station {
+	font-weight: 900;
+	font-size: 40px;
+	/* margin-top: -20px;
+	margin-bottom: -25px; */
+	/* overflow: hidden; */
+	text-overflow: ellipsis; // This is where the magic happens
+}
+
+button {
+	padding: 2px;
+}
+
+.pulldown {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.direction {
+	padding-top: 10px;
+	font-weight: 600;
+}
+
+.arrivals {
+	padding-left: 25px;
+}
+
+.trips {
+	padding-left: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+@media only screen and (max-width: 940px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		padding-top: 50px;
+		min-width: 350px;
+	}
+
+	.inner {
+		padding-top: 10px;
+	}
+
+	body {
+		background-color: '#000';
+	}
+ }
